@@ -1,6 +1,8 @@
 # 📨 钉钉消息汇总插件 (dingtalk-summary)
 
-> ZCode 插件 — 通过钉钉 DWS CLI 提取群聊/会话消息，AI 自动生成结构化汇总报告。
+> 跨平台 AI Agent 插件 — 通过钉钉 DWS CLI 提取群聊/会话消息，AI 自动生成结构化汇总报告。
+>
+> 支持：**ZCode** | **Claude Code** | **Codex CLI** | 任何能执行命令的 AI Agent
 
 ## ✨ 功能特性
 
@@ -53,6 +55,38 @@ git clone https://github.com/yingsongzhao/dingding.git "%USERPROFILE%\.zcode\cli
 ```
 
 重启 ZCode 即可。
+
+### 方式 3：Claude Code 安装
+
+```bash
+# 在项目目录中克隆
+git clone https://github.com/yingsongzhao/dingding.git .dingtalk-summary
+
+# Claude Code 会自动读取 CLAUDE.md 获取使用说明
+```
+
+或者直接把仓库克隆到项目中，Claude Code 会通过 `CLAUDE.md` 自动识别可用的命令。
+
+### 方式 4：Codex CLI 安装
+
+```bash
+# 克隆到项目目录
+git clone https://github.com/yingsongzhao/dingding.git .dingtalk-summary
+
+# Codex 会读取 CODEX.md / AGENTS.md 了解如何使用
+```
+
+### 方式 5：通用安装（任何 AI Agent）
+
+```bash
+git clone https://github.com/yingsongzhao/dingding.git
+cd dingding
+node skills/dingtalk-summary/scripts/config-helper.mjs init
+node skills/dingtalk-summary/scripts/config-helper.mjs set dwsCliPath "/path/to/dws"
+```
+
+只要 AI Agent 能执行 shell 命令，就可以调用 `scripts/fetch-messages.mjs` 获取消息。
+项目中的 `AGENTS.md` 包含了平台无关的使用说明。
 
 ## ⚙️ 配置
 
