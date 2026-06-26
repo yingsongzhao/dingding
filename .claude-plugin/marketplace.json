@@ -1,0 +1,21 @@
+{
+  "name": "dingtalk-summary-marketplace",
+  "owner": {
+    "name": "admin"
+  },
+  "metadata": {
+    "description": "钉钉消息提取与汇总插件 - 基于 DWS CLI",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "dingtalk-summary",
+      "source": {
+        "source": "url",
+        "url": "./"
+      },
+      "description": "通过钉钉 DWS CLI 提取群聊消息，AI 生成结构化汇总报告，支持定时自动汇总。触发词：钉钉消息",
+      "version": "0.1.0"
+    }
+  ]
+}

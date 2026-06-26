@@ -1,0 +1,7 @@
+{
+  "name": "dingtalk-summary",
+  "version": "0.1.0",
+  "description": "钉钉消息提取与汇总插件 - 基于 DWS CLI",
+  "license": "MIT",
+  "type": "module"
+}
