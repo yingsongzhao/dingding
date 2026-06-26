@@ -17,9 +17,20 @@
 
 | 依赖 | 版本 | 说明 |
 |------|------|------|
-| [ZCode](https://zcode.dev) | 最新版 | AI 编程助手 |
+| AI Agent（任选其一） | — | 见下方支持列表 |
 | [钉钉 DWS CLI](https://open.dingtalk.com/dingtalk-cli#dtcli-install) | v1.0.41+ | 钉钉命令行工具 |
 | [Node.js](https://nodejs.org) | v18+ | 脚本运行环境 |
+
+### 支持的 AI Agent 平台
+
+| 平台 | 安装方式 | 说明文件 |
+|------|---------|---------|
+| [ZCode](https://zcode.dev) | 插件系统 / 手动安装 | `SKILL.md` |
+| [Claude Code](https://docs.anthropic.com/claude-code) | 克隆到项目目录 | `CLAUDE.md` |
+| [Codex CLI](https://github.com/openai/codex) | 克隆到项目目录 | `CODEX.md` |
+| 其他 AI Agent | 克隆 + 命令行调用 | `AGENTS.md` |
+
+> 💡 只要你的 AI Agent 能执行命令行命令，就可以使用本插件。
 
 ## 🚀 安装
 
